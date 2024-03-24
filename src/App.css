@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.submenu {
+  display: none;
+}
+
+ul {
+  cursor: pointer;
+}
+
+/* Main menu */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  margin-top: 50px;
+  border: 1px solid rgb(49, 49, 49);
+}
+
+/* Menu item */
+li {
+  cursor: pointer;
+  padding: 20px;
+  background-color: #214358; 
+  color: #fff; 
+  transition: background-color 0.3s ease;
+  border: 2px solid #2E5A62;
+}
+
+/* Hover effect */
+li:hover {
+  background-color: #2E5A62; 
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+  border: 2px solid 214358;
+}
+
+/* Show submenu when menu item is clicked */
+li.active .submenu {
+  display: block;
+}
+
+/* Style for submenu items */
+.submenu li {
+  padding: 10px;
+  background-color: #2E5A62; 
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submenu items */   
+.submenu li:hover {
+  background-color: #214358; 
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.chart-container {
+  position: absolute;
+  z-index: 999;
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(85, 85, 85);
+}
